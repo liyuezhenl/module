@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div2 {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>首页</h1>
+    <div class="div1">
+        <button class="but1">登陆</button>
+        <button class="but2">注册</button>
+    </div>
+    <div class="div2">
+        <p><span>xxx</span> 欢迎您</p>
+        <button class="button">退出</button>
+    </div>
+
+    <script>
+        let span = document.querySelector('span');
+        let button = document.querySelector('.button');
+        let but1 = document.querySelector('.but1');
+        let but2 = document.querySelector('.but2');
+        let odiv1 = document.querySelector('.div1');
+        let odiv2 = document.querySelector('.div2');
+        if (localStorage.getItem('name')) {
+            odiv1.style.display = 'none';
+            odiv2.style.display = 'block';
+        } else {
+            odiv2.style.display = 'none';
+            odiv1.style.display = 'block';
+        }
+        but1.onclick = function() {
+            location.href = 'http://localhost/01JS2005/task/loginregisty/src/login.html'
+        }
+        but2.onclick = function() {
+            location.href = 'http://localhost/01JS2005/task/loginregisty/src/registry.html'
+        }
+
+        span.innerHTML = localStorage.getItem('name');
+        button.onclick = function() {
+            location.href = 'http://localhost/01JS2005/task/loginregisty/src/login.html'
+            localStorage.removeItem('name')
+        }
+    </script>
+</body>
+
+</html>

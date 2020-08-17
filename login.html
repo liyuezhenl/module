@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            text-align: center;
+        }
+        
+        div {
+            height: 200px;
+            width: 400px;
+            border: 1px saddlebrown solid;
+            margin: 30px auto;
+            text-align: center;
+            padding: 50px;
+        }
+        
+        p {
+            margin-bottom: 10px;
+        }
+        
+        button {
+            height: 30px;
+            width: 40px;
+            margin: 10px;
+        }
+        
+        h1 {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>用户登陆界面</h1>
+    <div>
+        <p><label for="">用户姓名</label><input type="text" class="username" name="username"><span class="span" autocomplete="off"></span></p>
+        <p><label for="">用户密码</label><input type="text" class="password" name="password" autocomplete="off"></p>
+        <button type="submit" class="submit" name="submit">登陆</button>
+        <button><a href="registry.html">注册</a></button>
+    </div>
+    <script src="js/sha1.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

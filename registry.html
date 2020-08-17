@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 600px;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>用户注册</legend>
+        <form action="http://localhost/01JS2005/task/loginregisty/php/reg.php" method="POST">
+            <p><label for="">用户姓名</label><input type="text" class="username" name="username" autocomplete="off"><span class="span"></span></p>
+            <p><label for="">用户密码</label><input type="password" class="password" name="password" autocomplete="off"></p>
+            <p><label for="">电子邮箱</label><input type="text" class="email" name="email" autocomplete="off"></p>
+            <button type="submit" class="submit" name="submit">提交注册</button>
+        </form>
+    </fieldset>
+    <script src="../../../public2005.js"></script>
+    <script src="js/reg.js"></script>
+</body>
+
+</html>
